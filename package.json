@@ -35,5 +35,9 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polovkin/demoApp"
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Text, View, StyleSheet} from 'react-native';
 const App = () => {
+  console.log(1);
   const [message, setMessage] = React.useState('');
   return (
     <View>
