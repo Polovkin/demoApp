@@ -27,7 +27,7 @@ jobs:
       - name: upload artifact to Firebase App Distribution
         uses: nickwph/firebase-app-distribution-action@v1
         with:
-          file: app-debug.apk
+          file: app-release.apk
           app: ${{ secrets.FIREBASE_APP_ID }}
           credentials-file: ${{ secrets.CREDENTIAL_FILE_CONTENT }}  # Optional: This is ignored if credentials is defined.
           groups: testers
