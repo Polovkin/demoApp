@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "papa-vinyl",
+  "private_key_id": "690c48b4923e6fd1462a139e9c885af1c0a6d309",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDKVLOwjbd+sQAM\nlyhZhwAYYm9AIUN+hroZD+6sO9CKW2dT5jn/oglBsFxrFgrCVV+G5g9DZdogtnVH\nrgbbOgjImg7AeBDHgYBdpvOJXMfJJUv2bbG1/X894jMe+slK5OxNiG2FWV7ey6M2\nTv73BhhPVJMAlaOrtaQTvMBNQoGGzuTsekrgVN9OKBykW7XMhOiEx0Lom/qzit29\nV/XGSNQdRoNznoaaSyvGVijIDQkMxlJ8FkCKchNARpqjTnEWJxFC2KaQOZNg5blr\nEA2lUsOQt/5DkL2sCKdwKMl4I6FbUmnZgVt4Hw8FbLHw8EiKAWhCo3QFsqSWl9Ta\nY8ObukifAgMBAAECggEARsUHsOpw0zx/4ueAMohYzS6o8QpxfDENqLR86/tj/vDn\nnF37zWFU0YgpWz9zdfO8nQedMRrQB/8p2G+TcFzFM71HCaU1YUL3rko2BsbQDpgg\nEMrfjONk/TVAYkaf37VgveHJRQo0d8NMjDNnVOnp2N2hKWQtwmKfSFQOAzgO7CKU\nPQ2d0J9V9Thm7vakSBH4ssIls35YVjLgSS44SUXIDoHPobS9mPLoyJzKJoIHd195\n95gpW7CGF5blH8svmss0kbqVq7NHJWte571ekcMHUeXa9i6JSk5IzCtYGQKBkHyh\njklZAhAtfd+BjYHaHHygATF40EWNWsxqSkdAqC1xYQKBgQDy8dayU3F/evp2TW2P\nBfKlwG1L7s5SObQgbJNWrOhxPDrS6FgWDjEoDYs/FGka1BoZuaZH+0fcRlqwdJjc\nUA9Dme36R7tz/gJrVwps92ZMo+//mXTX+PvvpzARLlA2Tk/fhV0aW35mkPZW74zG\nr0friXnhsxEEUDdYDjLusnO1DwKBgQDVNCTPH/SfQ1rmapzbr7r1fRo5j/cjJf0K\nK/ycmmuBdutYl3dcy3wJmfllYczwZ+E4bHdPCInCBoqUSHV2VJ5tapClCxH5oZnC\n4ZigUg/Jlwhg/E9MJ5/JKxRNKaUFR03ELc22KxlXrXDKBkxLKWp94Ce020bY1gUf\nXvxX+NTTcQKBgQDA3ugAqKg5eatv0iaBXkp19p+OoebgdnkfKLOMIzdh9lwI5nZQ\nBDJYRvBeQtjyeKLD+5QcH0y8foou/lIAzfpgQ8sfYGVcP7Mx/mcDfSGVBK1bMTwG\n3d89MnDBoxABHQjiPiFc9HgT+0/mUsVjUvJ49qpxWVTQJNLbMGKVB80+VwKBgQCt\nQtnjBPob73XQqLVehtntpEQKoWdaxgV0HbkFXyycopKxhS34WFktyFZ3wFn2yMSr\nwOHYdXzWE9DMnnHuvueczaxMo8lwz5YQXJtXNjkkPzwM7R5YKh9dMUgnSP+VYZPe\nKMbzEuVeblGprCKWNksXjnFWNZjGoG67RsrVhx8V0QKBgQCmzwptboIabvH4LKYS\n6EQWa76zc4rn9HRieG54YUUGg1LmRt2SSH8BJ5p3qeafTuJzFO+ARGeKwlZQ9RDF\nzIf0SahPa6otKm+dpJe92qtmkZqGmhr+LYymVl/2SxDkYvLzaYsf8h5mN8wLeNVN\nfrkc86lKyKcOLfaNG9xHq88nwQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "papavinyldemo@papa-vinyl.iam.gserviceaccount.com",
+  "client_id": "111875073597952188579",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/papavinyldemo%40papa-vinyl.iam.gserviceaccount.com"
+}

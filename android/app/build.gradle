@@ -130,6 +130,10 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            firebaseAppDistribution{
+                appId = "1:654554769471:android:fadfe23abe25c214a7b08a"
+                serviceCredentialsFile="./papa-vinyl-690c48b4923e.json"
+            }
         }
     }
 
