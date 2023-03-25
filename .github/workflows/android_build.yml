@@ -52,3 +52,5 @@ jobs:
       - name: Generate App APK
         run: |
           cd android && ./gradlew assembleRelease appDistributionUploadRelease
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
