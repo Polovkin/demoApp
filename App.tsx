@@ -31,3 +31,10 @@ const styles = StyleSheet.create({
   },
 });
 export default App;
+
+/*
+firebase appdistribution:distribute app-release.apk --app 1:654554769471:android:fadfe23abe25c214a7b08a
+ \
+--release-notes "Refactoring to questions module" \ \
+--groups "testers"
+*/
