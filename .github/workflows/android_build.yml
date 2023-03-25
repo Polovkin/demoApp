@@ -59,6 +59,7 @@ jobs:
           key: ${{ runner.os }}-gradle-caches-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-gradle-caches-
+
       - name: Make Gradlew Executable
         run: cd android && chmod +x ./gradlew
 
@@ -69,8 +70,11 @@ jobs:
       - name: Install FirebaseCli
         run: npm install -g firebase-tools
 
-      - name: Authenticate with Firebase
-        run: firebase login:ci --no-localhost
+      - name: Generate Firebase token
+        id: firebase-token
+        run: |
+          npm install -g firebase-ci
+          firebase-ci --token "$FIREBASE_TOKEN"
 
       - name: Upload to Firebase App Distribution
         run: |
