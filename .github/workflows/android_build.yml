@@ -6,15 +6,26 @@ jobs:
   android-build:
     name: Android Build
     runs-on: ubuntu-latest # using ubuntu latest version / or you can use a specific version
+    env:
+      NODE_VERSION: 14.x # node version
+      YARN_VERSION: 1.22.x # yarn version
+      JAVA_VERSION: 11 # java version
+      FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }} # firebase token
+      FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }} # firebase app id
 
     steps:
-      - name: Check out Git repository # clone the repo to local ci workspace
+      - name: Check out Git repository
         uses: actions/checkout@v2
 
-      - name: Set up our JDK environment # setup JDK environment: mandatory as we need to build  android project
+      - name: Set up our JDK environment
         uses: actions/setup-java@v1.4.3
         with:
-          java-version: 11
+          java-version: ${{ env.JAVA_VERSION }}
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -29,16 +40,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install dependencies # install project deps with --frozen-lockfile to make sure we will have the same packages version ( very recommended  on running yarn install on ci)
+      # install project deps with --frozen-lockfile to make sure we will have the same packages version ( very recommended  on running yarn install on ci)
+      - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      ## configure cash for gradle : will help to reduce build time
+      # configure cash for gradle : will help to reduce build time
       - name: Cache Gradle Wrapper
         uses: actions/cache@v2
         with:
           path: ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
+      # configure cash for gradle : will help to reduce build time
       - name: Cache Gradle Dependencies
         uses: actions/cache@v2
         with:
@@ -58,12 +71,11 @@ jobs:
 
       - name: Authenticate with Firebase
         run: firebase login:ci --no-localhost
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
       - name: Upload to Firebase App Distribution
         run: |
           firebase appdistribution:distribute ./android/app/build/outputs/apk/release/app-release.apk 
-          --app ${{ secrets.FIREBASE_APP_ID }} 
-          --groups testers 
-          --token ${{ secrets.FIREBASE_TOKEN }}    
+          --app $FIREBASE_APP_ID
+          --groups testers
+          --release-notes "Release Notes"
+          --token $FIREBASE_TOKEN
