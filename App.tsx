@@ -9,7 +9,7 @@ const App = () => {
         title="Hello to the tester"
         onPress={() => {
           setTimeout(() => {
-            setMessage('Hell Tester');
+            setMessage('RELEASE@');
           }, Math.floor(Math.random() * 200));
         }}
       />

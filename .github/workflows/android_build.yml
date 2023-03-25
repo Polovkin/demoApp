@@ -51,4 +51,4 @@ jobs:
 
       - name: Generate App APK
         run: |
-          cd android && ./gradlew assembleRelease appDistributionUploadDebug
+          cd android && ./gradlew assembleRelease appDistributionUploadRelease
