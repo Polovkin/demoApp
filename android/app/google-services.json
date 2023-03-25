@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "654554769471",
+    "project_id": "papa-vinyl-eb11a",
+    "storage_bucket": "papa-vinyl-eb11a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654554769471:android:76695a074ccea03ba7b08a",
+        "android_client_info": {
+          "package_name": "com.company.papavinyl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654554769471-poj81itl7ao9btm83sb3qr3lta80nii8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW6N25IfYIqljuUCG-8RSXZuNMROmJMU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654554769471-poj81itl7ao9btm83sb3qr3lta80nii8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654554769471:android:fadfe23abe25c214a7b08a",
+        "android_client_info": {
+          "package_name": "com.demoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654554769471-poj81itl7ao9btm83sb3qr3lta80nii8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW6N25IfYIqljuUCG-8RSXZuNMROmJMU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654554769471-poj81itl7ao9btm83sb3qr3lta80nii8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
