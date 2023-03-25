@@ -73,7 +73,7 @@ jobs:
       - name: Upload to Firebase App Distribution
         run: |
           firebase appdistribution:distribute ./android/app/build/outputs/apk/release/app-release.apk 
-          --app $FIREBASE_APP_ID
+          --app ${{ env.FIREBASE_APP_ID }}
           --groups testers
           --release-notes "Release Notes"
-          --token $FIREBASE_TOKEN
+          --token ${{ env.FIREBASE_TOKEN }}
